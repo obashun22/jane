@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+header {
+  border-radius: 0px !important;
+  padding: 30px 0px;
+}
+
+.content {
+  background-color: white;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    image-url('background_image.jpg');
+  background-size: cover;
+}
+
+footer {
+  height: 100px;
+  background-color: #f5f5f5;
+  text-align: center;
+  p {
+    line-height: 100px;
+  }
+}

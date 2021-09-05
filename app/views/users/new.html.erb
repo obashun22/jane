@@ -1,0 +1,10 @@
+<div class="ui container">
+  <h2>いざ、参戦！</h2>
+
+  <%= render 'form', user: @user %>
+  <div class="actions">
+    <%= link_to users_path do %>
+      <p style="display: inline">戻る</p>
+    <% end %>
+  </div>
+</div>

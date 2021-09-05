@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App</title>
+    <title>腹筋チャレンジ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="content">
+      <header>
+        <h1 class="ui positive center aligned header">
+          腹筋チャレンジ
+          <div class="sub header">残念だったわね。<br />あきらめて、おとなしく腹筋しなさい。</div>
+        </h1>
+      </header>
+
+      <%= yield %>
+
+    </div>
+
+    <footer>
+      <p>&copy;2021 名古屋大学漕艇部</p>
+    </footer>
   </body>
 </html>

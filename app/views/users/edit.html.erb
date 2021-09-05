@@ -1,0 +1,14 @@
+<div class="ui container">
+  <h2>個人情報設定</h2>
+  
+  <%= render 'form', user: @user %>
+  
+  <div class="actions">
+    <%= link_to @user, method: :delete, data: { confirm: 'まじ？' } do %>
+      <p style="display: inline">削除</p>
+    <% end %> |
+    <%= link_to users_path do %>
+      <p style="display: inline">戻る</p>
+    <% end %>
+  </div>
+</div>

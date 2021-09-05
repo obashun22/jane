@@ -1,0 +1,50 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.video {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+}
+
+.video-wrapper {
+  text-align: center;
+}
+
+
+/* テーブルデザイン */
+table {
+  width:100%;
+  border-spacing: 0px 0px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  overflow: hidden;
+  margin: 20px 0px;
+ }
+ 
+ table tbody td {
+  text-align: center;
+  padding: 10px 20px;
+ }
+ 
+ /* １行ずつ色変更　不要なら削除 even:奇数行　odd:偶数行 */
+ table tr:nth-child(even) td { 
+  background: #f5f5f5;
+ } 
+ table tr:nth-child(odd) td {
+  background: #FDFDFD;
+ }
+
+ .join-btn-wrapper {
+   text-align: right;
+   padding: 20px 0px;
+ }
+
+ .actions {
+   padding: 20px 0px 20px;
+   margin-bottom: 0px !important;
+   p {
+     padding: 0px 10px;
+   }
+ }

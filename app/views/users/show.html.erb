@@ -1,0 +1,27 @@
+<div class="ui container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>ニックネーム:</strong>
+    <%= @user.name %>
+  </p>
+
+  <p>
+    <strong>回数:</strong>
+    <%= @user.count %>
+  </p>
+
+  <p>
+    <strong>コメント:</strong>
+    <%= @user.comment %>
+  </p>
+
+  <div class="actions">
+    <%= link_to edit_user_path(@user) do%>
+      <p style="display: inline">編集</p>
+    <% end %> |
+    <%= link_to users_path do %>
+      <p style="display: inline">戻る</p>
+    <% end %>
+  </div>
+</div>

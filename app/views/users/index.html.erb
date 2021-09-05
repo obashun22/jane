@@ -1,0 +1,37 @@
+
+<div class="ui container">
+  <p id="notice"><%= notice %></p>
+
+  <div class="video-wrapper">
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/wHrAbExpyQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <h2>ランキング</h2>
+  <p>現在、<strong><%= @users[0].name%></strong>がトップ!!</p>
+  <table>
+    <tbody>
+      <% @users.each_with_index do |user, index| %>
+        <tr>
+          <td><%= index + 1 %></td>
+          <td>
+            <%= link_to edit_user_path(user) do %>
+              <p><%= user.name %></p>
+            <% end %>
+          </td>
+          <td>
+            <%= user.count %>
+          </td>
+          <td><%= user.comment %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <div class="join-btn-wrapper">
+    <%= link_to new_user_path, style: "background-color: rgba(0, 0, 0, 0)" do %>
+      <div class="ui positive labeled icon button">
+        <i class="user icon"></i>参戦する
+      </div>
+    <% end %>
+  </div>
+  
+
+</div>
